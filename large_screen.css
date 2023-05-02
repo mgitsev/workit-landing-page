@@ -1,0 +1,12 @@
+@media screen and (min-width: 1440px) {
+  .btn_primary {
+    height: 61px;
+    padding: 12px 25px;
+  }
+  header {
+    height: 730px;
+  }
+  main {
+    height: 730px;
+  }
+}

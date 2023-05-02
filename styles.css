@@ -1,5 +1,6 @@
 @import "./assets/fonts/manrope/Manrope-VariableFont_wght.ttf";
 @import "./assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf";
+@import "./large_screen.css";
 :root {
   --deep-purple: hsl(273, 85%, 13%);
   --light-green: hsl(150, 100%, 63%);
@@ -26,32 +27,43 @@
 
 p {
   font-family: var(--p-font);
-  font-size: var(var(--p-size));
+  font-size: var(--p-size);
   line-height: var(--p-spacing);
+  text-align: center;
+  color: var(--deep-purple);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--deep-purple);
+}
+
+.white_text {
+  color: white;
 }
 
 .hl {
   font-family: var(--h-font);
-  font-size: var(var(--hl-size));
+  font-size: var(--hl-size);
   line-height: var(--hl-spacing);
 }
 
 .hm {
   font-family: var(--h-font);
-  font-size: var(var(--hm-size));
+  font-size: var(--hm-size);
   line-height: var(--hm-spacing);
 }
 
 .hs {
   font-family: var(--h-font);
-  font-size: var(var(--hs-size));
+  font-size: var(--hs-size);
   line-height: var(--hs-spacing);
 }
 
 .btn_primary {
-  width: 140px;
-  height: 35px;
-  padding: auto;
   text-align: center;
   cursor: pointer;
   background-color: var(--light-green);
@@ -105,15 +117,16 @@ body {
   max-width: 100vw;
   min-height: 100vh;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-  position: absolute;
+  position: relative;
   left: -25%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 730px;
   width: 150%;
   background-color: var(--deep-purple);
 
@@ -122,7 +135,7 @@ header {
 }
 
 nav {
-  margin: 56px 0;
+  margin: 56px 0 0;
   width: calc(100vw - 23%);
   display: flex;
   align-items: center;
@@ -134,4 +147,57 @@ nav {
   width: 140px;
   max-height: 35px;
   height: 35px;
+}
+
+u {
+  text-decoration-color: var(--light-green);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 15px;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  height: 258px;
+  width: 635px;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 11.5%;
+  margin-right: 11.5%;
+}
+
+.main_content {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main_content_number {
+  height: 50px;
+  width: 50px;
+  border: 1px var(--deep-purple) solid;
+  border-radius: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-family: var(--h-font);
+  font-size: var(--hs-size);
+  font-style: italic;
+  color: var(--deep-purple);
+}
+
+.main_content_heading {
+  height: 50px;
+}
+
+.main_content_paragraph {
+  height: 125px;
 }
