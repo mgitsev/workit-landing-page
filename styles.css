@@ -1,6 +1,7 @@
 @import "./assets/fonts/manrope/Manrope-VariableFont_wght.ttf";
 @import "./assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf";
 @import "./large_screen.css";
+@import "./medium_screen.css";
 :root {
   --deep-purple: hsl(273, 85%, 13%);
   --light-green: hsl(150, 100%, 63%);
@@ -35,40 +36,25 @@ p {
 
 h1,
 h2,
-h3,
-h4,
-h5 {
-  color: var(--deep-purple);
+h3 {
+  font-family: var(--h-font);
 }
 
 .white_text {
   color: white;
 }
 
-.hl {
-  font-family: var(--h-font);
-  font-size: var(--hl-size);
-  line-height: var(--hl-spacing);
-}
-
-.hm {
-  font-family: var(--h-font);
-  font-size: var(--hm-size);
-  line-height: var(--hm-spacing);
-}
-
-.hs {
-  font-family: var(--h-font);
-  font-size: var(--hs-size);
-  line-height: var(--hs-spacing);
-}
-
 .btn_primary {
+  padding: 12px 25px;
+
   text-align: center;
   cursor: pointer;
+
   background-color: var(--light-green);
   color: var(--deep-purple);
+
   border: 1px var(--light-green) solid;
+
   transition: background-color 0.25s ease-in-out;
   transition: color 0.25s ease-in-out;
 }
@@ -123,11 +109,13 @@ body {
 
 header {
   position: relative;
-  left: -25%;
+  left: -50%;
+  width: 200%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 150%;
+
   background-color: var(--deep-purple);
 
   border-bottom-left-radius: 50%;
@@ -135,8 +123,6 @@ header {
 }
 
 nav {
-  margin: 56px 0 0;
-  width: calc(100vw - 23%);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -144,9 +130,7 @@ nav {
 
 .logo {
   max-width: 140px;
-  width: 140px;
   max-height: 35px;
-  height: 35px;
 }
 
 u {
@@ -160,8 +144,6 @@ u {
   flex-direction: column;
   align-items: center;
   color: white;
-  height: 258px;
-  width: 635px;
   text-align: center;
 }
 
@@ -169,35 +151,19 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 11.5%;
-  margin-right: 11.5%;
 }
 
 .main_content {
-  min-height: 200px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
 .main_content_number {
-  height: 50px;
-  width: 50px;
   border: 1px var(--deep-purple) solid;
   border-radius: 50px;
   text-align: center;
-  line-height: 50px;
   font-family: var(--h-font);
-  font-size: var(--hs-size);
   font-style: italic;
   color: var(--deep-purple);
-}
-
-.main_content_heading {
-  height: 50px;
-}
-
-.main_content_paragraph {
-  height: 125px;
 }

@@ -1,12 +1,81 @@
 @media screen and (min-width: 1440px) {
+  /* Typography */
+
+  h1 {
+    font-size: var(--hl-size);
+    line-height: var(--hl-spacing);
+  }
+
+  h2 {
+    font-size: var(--hm-size);
+    line-height: var(--hm-spacing);
+  }
+
+  h3 {
+    font-size: var(--hs-size);
+    line-height: var(--hs-spacing);
+  }
+
+  /* Elements */
+
+  .container {
+    height: 730px;
+  }
+
+  .headline {
+    height: 260px;
+    width: 635px;
+  }
+
+  nav {
+    margin: 56px 0 0;
+    width: calc(100vw - 23vw);
+  }
+
   .btn_primary {
     height: 61px;
-    padding: 12px 25px;
   }
-  header {
-    height: 730px;
+
+  .phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
   }
+
+  .phone_image {
+    width: 770px;
+    height: 440px;
+  }
+
   main {
-    height: 730px;
+    width: 77%;
+    margin: 0 auto;
+    gap: 20px;
+  }
+
+  .main_content {
+    width: 350px;
+    min-height: 200px;
+    flex-direction: column;
+  }
+
+  .main_content_number {
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: var(--hs-size);
+  }
+
+  .main_content_heading {
+    margin-block-start: 1em;
+    margin-block-end: 0;
+
+    height: 50px;
+    text-align: center;
+  }
+
+  .main_content_paragraph {
+    height: 125px;
   }
 }
